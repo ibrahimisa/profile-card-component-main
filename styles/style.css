@@ -1,3 +1,81 @@
+@font-face {
+  font-family: KumbhSans-Bold;
+  src: url(../fonts/KumbhSans-Bold.ttf); }
+@font-face {
+  font-family: KumbhSans-Regular;
+  src: url(../fonts/KumbhSans-Regular.ttf); }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
+html {
+  font-size: 62.5%; }
+
+body {
+  font-size: 1.6rem;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+  background: #19a2ae; }
+  body .bg-top {
+    position: absolute;
+    top: -80%;
+    left: -25%; }
+  body .bg-bottom {
+    position: absolute;
+    bottom: -100%;
+    right: -20%; }
+  body h1 {
+    visibility: hidden; }
+  body .card {
+    margin: auto 5em;
+    border-radius: 14px;
+    overflow: hidden;
+    background-image: url(../images/bg-pattern-card.svg);
+    background-position: center;
+    z-index: 3333; }
+    body .card .image {
+      transform: translateY(50%);
+      text-align: center;
+      margin-top: 3em; }
+      body .card .image img {
+        border-radius: 50%;
+        border-style: solid;
+        border-color: white;
+        border-width: 4px; }
+    body .card .profile {
+      background-color: white;
+      text-align: center;
+      padding-top: 7rem;
+      width: 25em;
+      font-family: KumbhSans-Regular; }
+      body .card .profile .name {
+        font-size: 1.8rem;
+        font-family: KumbhSans-Bold; }
+        body .card .profile .name span {
+          color: #969696;
+          font-family: KumbhSans-Regular; }
+      body .card .profile .city {
+        color: #969696;
+        margin-top: .8em; }
+      body .card .profile .stats {
+        padding: 1.5em 0;
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 1.5em;
+        border-width: 1px;
+        border-color: #969696;
+        border-top-style: solid; }
+        body .card .profile .stats div h2 {
+          font-size: 1.8rem;
+          font-family: KumbhSans-Bold; }
+        body .card .profile .stats div p {
+          color: #969696; }
+
+@media screen and (min-width: 375px) {
+  .card {
+    margin: auto 50px; } }
 
 /*# sourceMappingURL=style.css.map */

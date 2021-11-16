@@ -6,7 +6,8 @@
 *.fig
 style-guide.md
 design
-styles/.sass-cache
+.sass-cache
+nohup.out
 
 # Avoid accidental XD upload if you convert the design file
 ###############################################
