@@ -10,6 +10,9 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Useful Resources](#useful-resources)
+  - [Acknowledgements](#acknowledgements)
 - [Author](#author)
 
 ## Overview
@@ -37,6 +40,21 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 - Semantic HTML5 markup
 - Flexbox
 - CSS Grid
+
+### What I learned
+
+- I learned how add multiple background images and how to position them.
+
+### Useful Resources
+
+- [Multiple background-image](https://developer.mozilla.org/en-US/docs/Web/CSS/background-image)
+- [Background position](https://developer.mozilla.org/en-US/docs/Web/CSS/background-position)
+
+### Acknowledgements
+
+- I would like to mention peoples solutions that helped me figure out how takle certain proplems.  
+  - [@MonaElshikh](https://www.frontendmentor.io/solutions/responsive-profile-card-using-flex-box-49BJwMgLC)
+  - [@shrewdmind](https://www.frontendmentor.io/solutions/profile-card-component-ApYR_fZNl)
 
 ## Author
 

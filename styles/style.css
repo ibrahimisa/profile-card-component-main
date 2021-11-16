@@ -14,42 +14,41 @@ html {
 
 body {
   font-size: 1.6rem;
-  display: grid;
-  place-items: center;
+  font-family: KumbhSans-Regular;
   min-height: 100vh;
-  overflow: hidden;
-  background: #19a2ae; }
-  body .bg-top {
-    position: absolute;
-    top: -80%;
-    left: -25%; }
-  body .bg-bottom {
-    position: absolute;
-    bottom: -100%;
-    right: -20%; }
+  background-color: #19a2ae;
+  background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat;
+  background-position: right 50vw bottom 50vh, left 50vw top 50vh; }
   body h1 {
     visibility: hidden; }
+  body main {
+    display: grid;
+    place-items: center;
+    min-height: 90vh; }
   body .card {
-    margin: auto 5em;
-    border-radius: 14px;
+    border-radius: 10px;
     overflow: hidden;
-    background-image: url(../images/bg-pattern-card.svg);
-    background-position: center;
-    z-index: 3333; }
-    body .card .image {
-      transform: translateY(50%);
-      text-align: center;
-      margin-top: 3em; }
-      body .card .image img {
-        border-radius: 50%;
+    text-align: center;
+    width: 35rem;
+    position: relative;
+    background-color: white;
+    box-shadow: 1px 23px 48px #107f89; }
+    body .card .header {
+      position: relative; }
+      body .card .header img:first-child {
+        width: 35rem; }
+      body .card .header img:last-child {
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50px, -50px);
         border-style: solid;
-        border-color: white;
-        border-width: 4px; }
+        border-width: 6px;
+        border-radius: 50%;
+        border-color: white; }
     body .card .profile {
-      background-color: white;
-      text-align: center;
       padding-top: 7rem;
-      width: 25em;
       font-family: KumbhSans-Regular; }
       body .card .profile .name {
         font-size: 1.8rem;
@@ -73,9 +72,5 @@ body {
           font-family: KumbhSans-Bold; }
         body .card .profile .stats div p {
           color: #969696; }
-
-@media screen and (min-width: 375px) {
-  .card {
-    margin: auto 50px; } }
 
 /*# sourceMappingURL=style.css.map */

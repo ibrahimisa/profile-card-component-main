@@ -28,61 +28,58 @@ html{
 body{
     font:{
         size: 1.6rem;
+        family: KumbhSans-Regular;
     }
-    display: grid;
-    place-items: center;
     min-height: 100vh;
-    overflow: hidden;
-    background: $dark-cyan;
-    .bg-top{
-        position: absolute;
-        top: -80%;
-        left: -25%;
+    background: {
+        color: $dark-cyan;
+        image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+        repeat: no-repeat;
+        position: right 50vw bottom 50vh, left 50vw top 50vh;
     }
 
-    .bg-bottom{
-        position: absolute;
-        bottom: -100%;
-        right: -20%;
-
-    }
     h1{
-        visibility: hidden;
+        visibility: hidden; 
+    }
+
+    main{
+        display: grid;
+        place-items: center;
+        min-height: 90vh; 
     }
 
     .card{
-        // position: absolute;
-        // top: 50%;
-        // left: 50%;
-        // transform: translate(-50%, -50%);
-        margin: auto 5em;
-        border-radius: 14px;
+        border-radius: 10px;
         overflow: hidden;
-        background: {
-            image: url(../images/bg-pattern-card.svg);
-            position: center;
-        }
-        z-index: 3333;
+        text-align: center;
+        width: 35rem;
+        position: relative;
+        background-color: white;
+        box-shadow: 1px 23px 48px hsl(185, 79%, 30%);
 
-        .image{
-            transform: translateY(50%);
-            text-align: center;
-            margin-top: 3em;
-            img{
-                border:{
-                    radius: 50%;
+        .header{
+            position: relative;
+
+            img:first-child{
+                width: 35rem;
+            }
+
+            img:last-child{
+                position: absolute;
+                top: 90%;
+                left: 50%;
+                transform: translate(-50px, -50px);
+                border: {
                     style: solid;
+                    width: 6px;
+                    radius: 50%;
                     color: white;
-                    width: 4px;
                 }
             }
         }
 
         .profile{
-            background-color: white;
-            text-align: center;
             padding-top: 7rem;
-            width: 25em;
             font-family: KumbhSans-Regular;
 
             .name{
@@ -130,12 +127,4 @@ body{
             }
         }
     }
-}
-
-@media screen and (min-width: 375px) {
-
-    .card{ 
-        margin: auto 50px;
-    }
-    
 }
